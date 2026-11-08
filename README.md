@@ -102,6 +102,12 @@ Quelques exceptions selon la nature du projet :
 - **Apache 2.0** : spécifications d'architecture et jeu d'instructions ([IA-86](https://github.com/gastinelt/IA-86)).
 - **Tous droits réservés** : jeu d'exploration et moteur montagne [Vercora](https://github.com/gastinelt/vercora).
 
+#### Workflow
+
+Je conçois et je dirige mes projets : idées, architecture, infrastructure, choix techniques et responsabilité de ce qui tourne.
+Pour l'écriture du code, je travaille avec des agents IA (Claude Code, Antigravity) que j'encadre par des règles, puis je relis et je teste ce qu'ils produisent.
+Leurs commits sont signés à leur nom : l'historique montre qui a écrit quoi.
+
 ---
 
 <sub>Fait dans le Vercors.</sub>
