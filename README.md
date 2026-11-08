@@ -3,7 +3,7 @@
 Jeune développeur autodidacte dans le Vercors. J'aime construire les choses moi-même, de A à Z : mon propre serveur, mes propres outils, sans dépendre du cloud quand je peux l'éviter.
 
 
-Portfolio : [gastinel.me](https://www.gastinel.me) · Météo en direct : [vercors.me](https://vercors.me)
+Portfolio : [gastinel.me](https://www.gastinel.me) · Téléphone : [06 36 27 64 19](tel:+33636276419) · SIRET : 10481674900014
 
 ---
 
@@ -61,6 +61,13 @@ Portfolio : [gastinel.me](https://www.gastinel.me) · Météo en direct : [verco
 ![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)
 ![llama.cpp](https://img.shields.io/badge/llama.cpp-333333?style=flat-square)
 
+<br>
+
+<p align="center">
+  <img src="https://github-stats-extended.vercel.app/api?username=gastinelt&hide=prs,issues,contribs&hide_rank=true&show_icons=true&bg_color=ffffff&title_color=1f2328&text_color=59636e&icon_color=1f2328&border_color=d1d9e0" alt="Statistiques GitHub" height="150" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=gastinelt&layout=compact&bg_color=ffffff&title_color=1f2328&text_color=59636e&border_color=d1d9e0" alt="Langages les plus utilisés" height="150" />
+</p>
+
 #### Mon infrastructure
 
 Tout ce que je développe et publie tourne sur du matériel que je gère moi-même, sans dépendre du cloud pour le traitement des données.
@@ -77,6 +84,15 @@ Tout ce que je développe et publie tourne sur du matériel que je gère moi-mê
 3. **Secours & sauvegardes (CrocServer et bientôt OursServer)**
    - **CrocServer (secours local)** : machine dédiée sur mon réseau local pour la réplication quotidienne des bases et des fichiers, prête à relayer les services critiques en cas de maintenance ou de panne du serveur principal.
    - **Bientôt OursServer (sauvegarde hors site)** : future machine déportée hors de chez moi pour conserver une copie physique complète et indépendante des sauvegardes, en plus du stockage chiffré dans le cloud.
+
+#### Licences
+
+Mes logiciels et outils sont majoritairement publiés sous licence libre **GNU GPL v3** (notamment [Gastinel Weather Studio](https://github.com/gastinelt/gastinel-weather-studio), [Gastinel Write](https://github.com/gastinelt/Gastinel-Write) et [Gastinel Covert](https://github.com/gastinelt/Gastinel-Covert)).
+
+Quelques exceptions selon la nature du projet :
+- **MIT** : mods Minecraft et utilitaires ([totoche-tools](https://github.com/gastinelt/totoche-tools), [admin-panel](https://github.com/gastinelt/admin-panel)...).
+- **Apache 2.0** : spécifications d'architecture et jeu d'instructions ([IA-86](https://github.com/gastinelt/IA-86)).
+- **Tous droits réservés** : jeu d'exploration et moteur montagne [Vercora](https://github.com/gastinelt/vercora).
 
 ---
 
