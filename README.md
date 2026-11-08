@@ -66,18 +66,17 @@ Portfolio : [gastinel.me](https://www.gastinel.me) · Météo en direct : [verco
 Tout ce que je développe et publie tourne sur du matériel que je gère moi-même, sans dépendre du cloud pour le traitement des données.
 
 1. **Serveur principal (CornafServer)** — *Chez moi, sous Debian*
-   - **Matériel** : processeur Intel Core i5-12600, 24 Go de RAM, SSD NVMe et disques de données.
-   - **GPU dédié** : carte NVIDIA Tesla P100 (16 Go de VRAM) pour l'inférence IA en local avec `llama.cpp`, sans appel à une API extérieure.
-   - **Services hébergés** : l'assistant IA Gastinel Mind (modèle VercorNaf), le Hub des comptes (authentification OAuth), la forge Git, le réseau Météo Vercors, les serveurs de jeu, et l'ensemble des conteneurs Docker Compose.
+   - **Matériel** : Intel Core i5-12600, 24 Go de RAM et une carte NVIDIA Tesla P100 (16 Go).
+   - **Ce qui tourne dessus** : l'assistant IA Gastinel Mind (inférence locale sur la P100 avec `llama.cpp`), le Hub des comptes (Go, authentification OAuth PKCE), la forge Git, le réseau Météo Vercors et la collecte des stations du massif, le serveur de jeu (moteur Horizon en Rust), le stockage réseau (NAS), la messagerie et l'ensemble des conteneurs applicatifs sous Docker Compose.
+   - **Supervision** : surveillé en temps réel par mon [panneau d'administration maison](https://github.com/gastinelt/admin-panel) (Go / React) pour contrôler les disques, les températures, la VRAM et la régulation des ventilateurs.
 
 2. **Passerelle publique (VPS en Suisse)** — *Infomaniak, sous Debian*
    - **Hébergement** : hébergé chez Infomaniak en Suisse, il sert de point d'entrée unique depuis Internet.
-   - **Réseau & Sécurité** : reverse-proxy HTTPS automatique (Caddy) et pare-feu. Il renvoie le trafic vers chez moi par des tunnels chiffrés **WireGuard** : aucun port n'est ouvert directement sur ma connexion personnelle.
+   - **Réseau & Sécurité** : reverse-proxy HTTPS automatique (Caddy) et pare-feu strict. Il renvoie le trafic vers chez moi par des tunnels chiffrés **WireGuard** : aucun port n'est ouvert directement sur ma connexion personnelle.
 
-3. **Secours & double sauvegarde (CrocServer et bientôt OursServer)** — *Machines de redondance sur mon réseau local*
-   - **Rôle** : réplication locale des sauvegardes pour doubler la sécurité en cas de panne matérielle sur le serveur principal, et secours des services.
-   - **Sauvegardes** : réplication quotidienne des bases et configurations, plus une copie chiffrée de bout en bout envoyée hors site.
-   - **Supervision** : l'ensemble est surveillé en temps réel par mon [panneau d'administration maison](https://github.com/gastinelt/admin-panel) (Go / React) pour contrôler les disques, les températures, la VRAM et les ventilateurs.
+3. **Secours & sauvegardes (CrocServer et bientôt OursServer)**
+   - **CrocServer (secours local)** : machine dédiée sur mon réseau local pour la réplication quotidienne des bases et des fichiers, prête à relayer les services critiques en cas de maintenance ou de panne du serveur principal.
+   - **Bientôt OursServer (sauvegarde hors site)** : future machine déportée hors de chez moi pour conserver une copie physique complète et indépendante des sauvegardes, en plus du stockage chiffré dans le cloud.
 
 ---
 
