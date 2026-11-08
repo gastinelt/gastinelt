@@ -63,13 +63,21 @@ Portfolio : [gastinel.me](https://www.gastinel.me) · Météo en direct : [verco
 
 #### Mon infrastructure
 
-Tout ce que je publie tourne sur du matériel que je gère moi-même.
+Tout ce que je développe et publie tourne sur du matériel que je gère moi-même, sans dépendre du cloud pour le traitement des données.
 
-- **Serveur maison** sous Debian. Une carte Tesla P100 (16 Go) fait tourner l'IA en local, sans API extérieure.
-- **VPS en frontal** : il reçoit le trafic public et le renvoie vers la maison par un tunnel WireGuard. Rien n'est ouvert directement chez moi.
-- **Services en conteneurs Docker**, derrière Caddy (HTTPS automatique) : sites, IA, météo, serveur de jeu, forge Git.
-- **Administration** : un [panneau maison](https://github.com/gastinelt/admin-panel) pour surveiller les disques, le GPU, les ventilateurs et les services.
-- **Sauvegardes** locales, plus une copie chiffrée hors site.
+1. **Serveur principal (CornafServer)** — *Chez moi, sous Debian*
+   - **Matériel** : processeur Intel Core i5-12600, 24 Go de RAM, SSD NVMe et disques de données.
+   - **GPU dédié** : carte NVIDIA Tesla P100 (16 Go de VRAM) pour l'inférence IA en local avec `llama.cpp`, sans appel à une API extérieure.
+   - **Services hébergés** : l'assistant IA Gastinel Mind (modèle VercorNaf), le Hub des comptes (authentification OAuth), la forge Git, le réseau Météo Vercors, les serveurs de jeu, et l'ensemble des conteneurs Docker Compose.
+
+2. **Passerelle publique (VPS en Suisse)** — *Infomaniak, sous Debian*
+   - **Hébergement** : hébergé chez Infomaniak en Suisse, il sert de point d'entrée unique depuis Internet.
+   - **Réseau & Sécurité** : reverse-proxy HTTPS automatique (Caddy) et pare-feu. Il renvoie le trafic vers chez moi par des tunnels chiffrés **WireGuard** : aucun port n'est ouvert directement sur ma connexion personnelle.
+
+3. **Secours & double sauvegarde (CrocServer et bientôt OursServer)** — *Machines de redondance sur mon réseau local*
+   - **Rôle** : réplication locale des sauvegardes pour doubler la sécurité en cas de panne matérielle sur le serveur principal, et secours des services.
+   - **Sauvegardes** : réplication quotidienne des bases et configurations, plus une copie chiffrée de bout en bout envoyée hors site.
+   - **Supervision** : l'ensemble est surveillé en temps réel par mon [panneau d'administration maison](https://github.com/gastinelt/admin-panel) (Go / React) pour contrôler les disques, les températures, la VRAM et les ventilateurs.
 
 ---
 
