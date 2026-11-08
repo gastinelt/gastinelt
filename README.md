@@ -65,14 +65,14 @@ Portfolio : [gastinel.me](https://www.gastinel.me) · Téléphone : [06 36 27 64
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=gastinelt&hide=prs%2Cissues%2Ccontribs&hide_rank=true&show_icons=true&bg_color=0d1117&title_color=e6edf3&text_color=8b949e&icon_color=e6edf3&border_color=30363d">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api?username=gastinelt&hide=prs%2Cissues%2Ccontribs&hide_rank=true&show_icons=true&bg_color=ffffff&title_color=1f2328&text_color=59636e&icon_color=1f2328&border_color=d1d9e0">
-    <img src="https://github-stats-extended.vercel.app/api?username=gastinelt&hide=prs%2Cissues%2Ccontribs&hide_rank=true&show_icons=true&bg_color=ffffff&title_color=1f2328&text_color=59636e&icon_color=1f2328&border_color=d1d9e0" alt="Statistiques GitHub" height="150" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=gastinelt&hide=prs%2Cissues%2Ccontribs&hide_rank=true&show_icons=true&hide_border=true&bg_color=0d1117&title_color=e6edf3&text_color=8b949e&icon_color=e6edf3">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api?username=gastinelt&hide=prs%2Cissues%2Ccontribs&hide_rank=true&show_icons=true&hide_border=true&bg_color=ffffff&title_color=1f2328&text_color=59636e&icon_color=1f2328">
+    <img src="https://github-stats-extended.vercel.app/api?username=gastinelt&hide=prs%2Cissues%2Ccontribs&hide_rank=true&show_icons=true&hide_border=true&bg_color=ffffff&title_color=1f2328&text_color=59636e&icon_color=1f2328" alt="Statistiques GitHub" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=gastinelt&layout=compact&bg_color=0d1117&title_color=e6edf3&text_color=8b949e&border_color=30363d">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=gastinelt&layout=compact&bg_color=ffffff&title_color=1f2328&text_color=59636e&border_color=d1d9e0">
-    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=gastinelt&layout=compact&bg_color=ffffff&title_color=1f2328&text_color=59636e&border_color=d1d9e0" alt="Langages les plus utilisés" height="150" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=gastinelt&layout=compact&hide_border=true&bg_color=0d1117&title_color=e6edf3&text_color=8b949e">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=gastinelt&layout=compact&hide_border=true&bg_color=ffffff&title_color=1f2328&text_color=59636e">
+    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=gastinelt&layout=compact&hide_border=true&bg_color=ffffff&title_color=1f2328&text_color=59636e" alt="Langages les plus utilisés" />
   </picture>
 </p>
 
