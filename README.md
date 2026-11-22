@@ -76,6 +76,11 @@ Portfolio : [gastinel.me](https://www.gastinel.me) · Téléphone : [06 36 27 64
   </picture>
 </p>
 
+#### Dernières sorties
+
+- **[Gastinel Weather Studio 0.7.0-beta](https://github.com/gastinelt/gastinel-weather-studio)** : nouvelle mise à jour bêta de l'application bureau/mobile de relevés et cartographie des trous à froid du Vercors (Rust / Tauri).
+- **[Gastinel Music Downloader (v1.0.0)](https://github.com/gastinelt/gastinel-music-dl)** : téléchargeur audio haute qualité (Deezer, YouTube, SoundCloud) avec vérification bit-à-bit en RAM en Rust et synchronisation Navidrome (GPL v3).
+
 #### Mon infrastructure
 
 Tout ce que je développe et publie tourne sur du matériel que je gère moi-même, sans dépendre du cloud pour le traitement des données.
