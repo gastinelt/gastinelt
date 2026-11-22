@@ -78,6 +78,7 @@ Portfolio : [gastinel.me](https://www.gastinel.me) · Téléphone : [06 36 27 64
 
 #### Dernières sorties
 
+- **[Portage PRO-100S](https://github.com/gastinelt/portage-pro100s)** : rétro-ingénierie du flux d'impression de la Canon PIXMA PRO-100S, qui n'a aucun pilote Linux : niveaux d'encre lus en USB sous Linux, décodeur et encodeur raster (Python, expérimental, GPL v3).
 - **[Gastinel Weather Studio 0.7.0-beta](https://github.com/gastinelt/gastinel-weather-studio)** : nouvelle mise à jour bêta de l'application bureau/mobile de relevés et cartographie des trous à froid du Vercors (Rust / Tauri).
 - **[Gastinel Music Downloader (v1.0.0)](https://github.com/gastinelt/gastinel-music-dl)** : téléchargeur audio haute qualité (Deezer, YouTube, SoundCloud) avec vérification bit-à-bit en RAM en Rust et synchronisation Navidrome (GPL v3).
 
